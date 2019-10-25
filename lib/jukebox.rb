@@ -39,7 +39,6 @@ def help
    song_to_play = gets.chomp
    if(1..9).to_a.include?(song_to_play.to_i)
      puts "Playing #{songs[song_to_play.to_i - 1]}"
-     puts "Your song is now playing"
    elsif songs.include?(song_to_play)
      puts "Playing #{song_to_play}"
    else
@@ -49,7 +48,6 @@ def help
 
  def exit_jukebox
    puts "Goodbye"
-   say 'Goodbye'
  end
 
  def run(songs)
