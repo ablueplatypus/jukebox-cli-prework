@@ -49,6 +49,7 @@ def help
 
  def exit_jukebox
    puts "Goodbye"
+   say 'Goodbye'
  end
 
  def run(songs)
